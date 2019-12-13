@@ -1,3 +1,7 @@
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +164,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  height: 100px;
+  background-color: #F6F6F6;
+}
+.navigation nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  height: 100px;
+  margin: 0 auto;
+}
+.navigation nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #23293B;
+}
+.navigation nav .title {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Russo One', sans-serif;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +197,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .hero {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
