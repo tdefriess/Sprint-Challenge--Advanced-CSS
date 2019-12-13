@@ -62,6 +62,10 @@
       }
 
       .btn {
+        .my-button(@btn-bg-color, 100px, @porcelain);
+        &:hover {
+          .my-button(@porcelain, 100px, @btn-bg-color);
+        }
       }
     }
 
@@ -76,4 +80,4 @@
       }
     }
   }
-}// home
+}
