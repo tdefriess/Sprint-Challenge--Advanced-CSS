@@ -34,23 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website is coded to look good on various specific devices. They usually use media queries and hard coded website dimensions. Often the code is optimized so that a device will only download the information it needs to display the site in its coded format.
 
+A responsive website is coded to look good on any screen at any dimension. They also use media queries, but elements are coded to change styles based on any possible screen size. A responsive site will generally have only one template downloaded for all devices vs. an adaptive site which has hard coded formats for various devices.
 
 2. Describe what it means to be mobile first vs desktop first.
 
-
+Mobile first describes building a website beginning with mobile styles, and working your way to larger screens using min-width queries from there. Desktop first describes the reverse, starting with desktop styles and then using max-width queries to work down to tablets and then to phone styles.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-
+The font-size: 62.5% in the html tag changes all displayed text on a page from the default font size of 16px to a display size of 10px. This makes it very easy to use rem units to scale the font size of an element to the correct pixel size while making the math super easy. For instance, if you wanted to make all paragraphs have 16px, you would give them a font size of 1.6rem. Using rem allows for the user to change their browser's default font size and for their choice to affect all text on the page in the same way, keeping the page more responsive to a user's individual needs.
 
 4. How would you describe preprocessing to someone new to CSS?
 
-
+Preprocessing, in our case with less, is a means of writing simpler code in a nested tree format that less will then complie--or interpret--into a css file that a browser can read. Organization as mentioned is one big advantage. Another key advantage is the ability to use precoded tools to simplify the styling process, like the darken or lighten functions, allowing us to add color effects without having to do the hard work of seeking specific color hex codes.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
+My favorite preprocessing concept is the improved organization. It is so much more convenient to work on smaller pieces of code organized into different files rather than trying to constantly scroll through a massive css file.
 
+The concept that I struggle with the most right now is parametric mixins. In particular, I am having trouble deciding which parameters are most worth including for certain generic elements like buttons. Color seems to be the most important and width would be useful for desktop vs mobile styles, but it seems like I'm missing a parameter that could be useful. In this project, I used five parameters for my button, which felt inelegant.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
