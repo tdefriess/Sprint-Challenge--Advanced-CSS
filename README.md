@@ -48,7 +48,7 @@ The font-size: 62.5% in the html tag changes all displayed text on a page from t
 
 4. How would you describe preprocessing to someone new to CSS?
 
-Preprocessing, in our case with less, is a means of writing simpler code in a nested tree format that less will then complie--or interpret--into a css file that a browser can read. Organization as mentioned is one big advantage. Another key advantage is the ability to use precoded tools to simplify the styling process, like the darken or lighten functions, allowing us to add color effects without having to do the hard work of seeking specific color hex codes.
+Preprocessing, in our case with less, is a means of writing simpler code in a nested tree format that less will then complie--or interpret--into a css file that a browser can read. Organization as mentioned is one big advantage.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
