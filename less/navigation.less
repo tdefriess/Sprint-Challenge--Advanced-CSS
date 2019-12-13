@@ -25,6 +25,14 @@
     a {
       .font-style(1.6rem, @nav-font);
       text-decoration: none;
+
+      &:hover {
+        animation-name: underline;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+
     }
 
     .title {
