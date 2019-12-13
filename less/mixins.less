@@ -7,16 +7,15 @@
   font-size: @size;
   color: @color;
 }
-.my-button(@bg-color, @width, @ft-color){
+.my-button(@bg-color, @width, @ft-color, @height, @padding){
   background-color: @bg-color;
   width: @width;
   color: @ft-color;
-  height: 40px;
+  height: @height;
   border-radius: 5px;
-  padding: 10px 0;
+  padding: @padding;
   font-size: 2rem;
   text-align: center;
   text-emphasis: 700;
-
-
+  font-family: 'Ubuntu', sans-serif;
   }
