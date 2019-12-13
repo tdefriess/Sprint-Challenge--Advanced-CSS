@@ -1,1 +1,21 @@
 // Mixins Here
+.flexbox() {
+  display: flex;
+  flex-wrap: wrap;
+}
+.font-style(@size, @color) {
+  font-size: @size;
+  color: @color;
+}
+.my-button(@bg-color, @width, @ft-color, @height, @padding){
+  background-color: @bg-color;
+  width: @width;
+  color: @ft-color;
+  height: @height;
+  border-radius: 5px;
+  padding: @padding;
+  font-size: 2rem;
+  text-align: center;
+  text-emphasis: 700;
+  font-family: 'Ubuntu', sans-serif;
+  }

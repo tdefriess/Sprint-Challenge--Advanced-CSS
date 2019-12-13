@@ -1,1 +1,45 @@
 // Navigation code here
+.navigation {
+  height: 100px;
+  background-color: @nav-bg;
+
+  // Stretch goal
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: fade(@nav-bg, 70%);
+
+  nav {
+    .flexbox();
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    height: 100px;
+    margin: 0 auto;
+
+    @media @phone {
+      justify-content: space-around;
+    }
+
+    a {
+      .font-style(1.6rem, @nav-font);
+      text-decoration: none;
+
+      &:hover {
+        animation-name: underline;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+
+    }
+
+    .title {
+      flex-basis: 100%;
+      text-align: center;
+      .font-style(4rem, @ebony-clay);
+      font-family: 'Russo One', sans-serif;
+    }
+  }
+}
